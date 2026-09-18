@@ -6,7 +6,9 @@ public class PlayerMovement : MonoBehaviour
     public Transform Position;
 
     void Update()
+
     {
+
         Vector3 move = Vector3.zero;
 
         if (Input.GetKey(KeyCode.W))
