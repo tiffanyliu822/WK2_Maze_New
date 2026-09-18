@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class WinCondition : MonoBehaviour
 {
-    private Transform player;
-    private Transform goal;
+    public Transform player;
+    public Transform goal;
     private float winDistance = 1.5f;
 
     private bool hasWon = false;
