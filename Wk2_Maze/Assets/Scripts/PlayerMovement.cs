@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public Rigidbody rb;
 
     void Update()
 
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
             move += Vector3.right;
         }
 
-
         transform.Translate(move * moveSpeed * Time.deltaTime);
+
     }
 }
