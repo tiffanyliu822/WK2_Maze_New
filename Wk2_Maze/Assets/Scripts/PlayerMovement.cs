@@ -5,30 +5,19 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody rb;
 
-    void Update()
-
+    void Start()
     {
+        rb = GetComponent<Rigidbody>();
+    }
 
-        Vector3 move = Vector3.zero;
 
-        if (Input.GetKey(KeyCode.W))
-        {
-            move += Vector3.forward;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            move += Vector3.back;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            move += Vector3.left;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            move += Vector3.right;
-        }
+    void FixedUpdate()
+    {
+        float moveH = Input.GetAxis("Horizontal");
+        float moveV = Input.GetAxis("Vertical");
 
-        transform.Translate(move * moveSpeed * Time.deltaTime);
+        Vector3 movement = new Vector3(moveH, 0f, moveV);
+        rb.AddForce(movement * moveSpeed);
 
     }
 }

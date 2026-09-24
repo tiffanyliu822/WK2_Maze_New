@@ -15384,7 +15384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6eda413e35d0d64989e15056d9c9b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 5000
   rb: {fileID: 753384598}
 --- !u!23 &753384593
 MeshRenderer:
@@ -15448,7 +15448,7 @@ Transform:
   m_GameObject: {fileID: 753384589}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.89, y: 15.300565, z: -9.139425}
+  m_LocalPosition: {x: 27.89, y: 15.319, z: -9.139425}
   m_LocalScale: {x: 0.54038, y: 1.6611292, z: 0.54038}
   m_ConstrainProportionsScale: 0
   m_Children:
